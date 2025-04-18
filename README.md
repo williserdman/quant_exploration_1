@@ -3,7 +3,7 @@
 MacOS proved to be a bit of a pain to run docker, so I used colima, here's the run command
 `colima start`
 
-here's the docker run command that I used.. built the image using the provided Dockerfile
+here's the docker run command that I used.. built the image using the provided Dockerfile. `conda-jupyter` is the image name
 `docker run -d -p 8888:8888 -v $(pwd)/notebooks:/opt/notebooks --name jupyter-lab conda-jupyter`
 
 then on port 8888 there is the jupyter with conda running through the docker container... remember that this is running on Apple Silicon
