@@ -33,7 +33,8 @@ RUN conda run -n py310 pip install --upgrade pip && \
     keras \
     eikon \ 
     nasdaq-data-link \ 
-    yfinance
+    yfinance \ 
+    git+https://github.com/yhilpisch/tstables 
     #git+https://github.com/Nasdaq/data-link-python
     # git+git://github.com/yhilpisch/tpqoa
 
