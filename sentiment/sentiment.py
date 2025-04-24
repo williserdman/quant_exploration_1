@@ -77,7 +77,7 @@ model.save("model.h5", "~/Documents/coding/tensor_playground/neural_networks/")#
 """  # model's been run once, and have saved it so commenting this all out as we don't need to train the model again
 
 model = keras.models.load_model(
-    "neural_networks\model.h5"
+    "model.h5"
 )  # allows you to tweak hyper-parameters and save only the best one#the files are messed up big time, has to do with current working directory
 
 
@@ -94,7 +94,7 @@ def review_encode(in_string):
 
 
 # Inputting a review
-with open("neural_networks\\review.txt", "r") as f:  # use "relative path"
+with open("review.txt", "r") as f:  # use "relative path"
     for (
         line
     ) in (
